@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <span id="header">HANGMAN</span><br><span id="subheader">select a mode to get started</span><br><br><br>
+    <button id="btn-beginner" onclick="return beginEvent(4)">Beginner</button>
+    <button id="btn-intermediate" onclick="return beginEvent(2)">Intermediate</button>
+    <button id="btn-expert" onclick="return beginEvent(0)">Expert</button><br><br>
+
+    Wins: <span id="wins">0</span><br><br>
+    Guesses Remaining: <span id="guesses">0</span><br><br>
+    Letters Guessed: <span id="letters-guessed"></span><br><br><br>
+    Word: <span id="word"></span><br><br>
+    <button id="guess-word" onclick="return guessWord()" disabled="disabled">Guess Word</button>
+</body>
+<script type="text/javascript" src="./javascript.js"></script>
+</html>
